@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+	 char name[15], major[30]; // '이름', '학과명(전공)'을 문자열 자료형으로 선언, '학과명'은 길어질 수 있기 때문에 '이름'보다 범위를 넓게 설정
+	 int birth, stdID; // '생년월일', '학번'을 정수 자료형으로 선언
+		
+	 printf("이름 입력 : ");
+	 scanf_s("%s", name, sizeof(name));
+	 printf("생년월일 입력 : ");
+	 scanf_s("%d", &birth);
+	 printf("학번 입력 : ");
+	 scanf_s("%d", &stdID);
+	 printf("학과명 입력 : ");
+	 scanf_s("%s", major, sizeof(major)); // 문자열과 정수의 입출력
+
+	 printf("\n이름 : %s\n", name);
+	 printf("생년월일 : %d\n", birth);
+	 printf("학번 : %d\n", stdID);
+	 printf("학과명 : %s\n", major); //네 가지의 변수를 각각의 포맷으로 출력
+}
